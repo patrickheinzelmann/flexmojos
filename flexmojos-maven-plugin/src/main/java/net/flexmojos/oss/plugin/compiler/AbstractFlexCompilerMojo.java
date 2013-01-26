@@ -3339,7 +3339,7 @@ public abstract class AbstractFlexCompilerMojo<CFG, C extends AbstractFlexCompil
         try
         {
             // first try to get the artifact from maven local repository for the appropriated flex version
-            themeArtifact = resolve( themeGroupId, themeArtifactId, themeVersion, "theme", "swc" ).getFile();
+            themeArtifact = resolve( themeGroupId, themeArtifactId, themeVersion, null, "swc" ).getFile();
         }
         catch ( RuntimeMavenResolutionException e )
         {
