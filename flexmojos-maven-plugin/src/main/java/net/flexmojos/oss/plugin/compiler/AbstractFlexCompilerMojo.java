@@ -3344,7 +3344,7 @@ public abstract class AbstractFlexCompilerMojo<CFG, C extends AbstractFlexCompil
         catch ( RuntimeMavenResolutionException e )
         {
             throw new MavenRuntimeException( "Unable to resolve theme artifact (" + themeGroupId + ":" +
-                    themeArtifactId + ":" + themeVersion + ":theme:swc.", e );
+                    themeArtifactId + ":" + themeVersion + ":swc.", e );
         }
         return themeArtifact;
     }
